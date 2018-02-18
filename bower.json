@@ -1,6 +1,6 @@
 {
   "name": "angular-todo",
-  "description": "Todo application\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[",
+  "description": "Todo application",
   "main": "index.js",
   "authors": [
     "Andreaytm"
@@ -15,8 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "angular": "^1.6.9",
-    "angular-route": "^1.6.9"
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
   }
 }
