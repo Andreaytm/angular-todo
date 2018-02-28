@@ -36,8 +36,8 @@ angular.module("RouteControllers", [])
 	})
 
 //Login controller
-	.controller("LoginController", function($scope, $location, UserAPIService, store) {
-
+	.controller("LoginController", function($scope, $location, UserService, store) {
+		/*$scope.loginUser = {};???*/
 		var url="https://morning-castle-91468.herokuapp.com/";
 
 		$scope.submitForm = function() {
@@ -72,7 +72,7 @@ angular.module("RouteControllers", [])
 		$scope.todo = {};
 		//Edit Todo and Delete Todo methods
 		$scope.editTodo = function(id){
-			$location.path("/todo/edit/" + id);
+			$location.path("todo/edit/" + id);
 		};
 		$scope.deleteTodo = function(id){
 			TodoAPIService.deleteTodo(url + "todo/" + id, $scope.username, $scope.authToken).then(function(results) {
@@ -108,13 +108,13 @@ angular.module("RouteControllers", [])
 					console.log(err)
 				})
 			}
-		};
+		}
 	})
 		
 //Edit Todo Controller
 	.controller("EditTodoController", function($scope, $location, $routeParams, TodoAPIService, store) {
-		var id= $routeParams.id;
-		var url="https://morning-castle-91468.herokuapp.com/";
+		var id = $routeParams.id;
+		var url ="https://morning-castle-91468.herokuapp.com/";
 
 		$scope.submitForm = function() {
 			if($scope.todoForm.$valid) {
