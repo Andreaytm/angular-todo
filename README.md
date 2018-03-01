@@ -41,7 +41,7 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 - [npm](https://www.npmjs.com/)
 	- We use **npm** to help manage some of the dependencies in our application. 
 - [bower](https://bower.io/)
-	- **Bower** is used to maange the installation of our libraries and frameworks.
+	- **Bower** is used to manage the installation of our libraries and frameworks.
 
 ## Contributing 
 
