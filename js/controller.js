@@ -36,8 +36,7 @@ angular.module("RouteControllers", [])
 	})
 
 //Login controller
-	.controller("LoginController", function($scope, $location, UserService, store) {
-		/*$scope.loginUser = {};???*/
+	.controller("LoginController", function($scope, $location, UserAPIService, store) {
 		var url="https://morning-castle-91468.herokuapp.com/";
 
 		$scope.submitForm = function() {
@@ -127,7 +126,7 @@ angular.module("RouteControllers", [])
 
 				console.log(url + "todo/" + id);
 
-				TodoAPIService.editTodo(url + "todo/" + id, $scope.todo, $scope.authToken).then(function(results) {
+				TodoAPIService.editTodo(url + "todo/" + id, $scope.todo, $scope.authToken).get(function(results) {
 					console.log(results)
 				}).catch(function(err){
 					console.log(err)
