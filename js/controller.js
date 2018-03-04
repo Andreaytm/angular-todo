@@ -69,7 +69,7 @@ angular.module("RouteControllers", [])
 		$scope.authToken = store.get("authToken");
 		$scope.username = store.get("username");
 
-		$scope.todo = {};
+		$scope.todos = {};
 		//Edit Todo and Delete Todo methods
 		$scope.editTodo = function(id){
 			$location.path("/edit-todo" + id);
