@@ -1,11 +1,11 @@
 angular.module("RouteControllers", [])
 	.controller("HomeController", function($scope) {
-		$scope.title = "Welcome to Angular Todo!";
+		$scope.title ="Welcome to Angular Todo!";
 	})
 //Register Controller
 	.controller("RegisterController", function($scope, $location, UserAPIService, store) {
 		$scope.registrationUser = {};
-		var url = "https://morning-castle-91468.herokuapp.com/";
+		var url="https://morning-castle-91468.herokuapp.com/";
 
 		$scope.login = function() {
 			UserAPIService.callAPI(url + "accounts/api-token-auth/", $scope.data).then(function(results) {
@@ -37,8 +37,8 @@ angular.module("RouteControllers", [])
 
 //Login controller
 	.controller("LoginController", function($scope, $location, UserService, store) {
-		var url = "https://morning-castle-91468.herokuapp.com/";
-		$scope.loginUser = {};
+		var url="https://morning-castle-91468.herokuapp.com/";
+
 		$scope.submitForm = function() {
 			if($scope.loginForm.$valid) {
 				$scope.loginUser.username = $scope.user.username;
@@ -68,7 +68,7 @@ angular.module("RouteControllers", [])
 		$scope.authToken = store.get("authToken");
 		$scope.username = store.get("username");
 
-		$scope.todos = {};
+		$scope.todo = {};
 		//Edit Todo and Delete Todo methods
 		$scope.editTodo = function(id){
 			$location.path("todo/edit/" + id);
@@ -113,7 +113,7 @@ angular.module("RouteControllers", [])
 //Edit Todo Controller
 	.controller("EditTodoController", function($scope, $location, $routeParams, TodoAPIService, store) {
 		var id = $routeParams.id;
-		var url = "https://morning-castle-91468.herokuapp.com/";
+		var url ="https://morning-castle-91468.herokuapp.com/";
 
 		$scope.submitForm = function() {
 			if($scope.todoForm.$valid) {

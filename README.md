@@ -15,25 +15,15 @@ This app will allow users to register and login. Once the users have done that, 
 This app uses JSON Web Tokens to authenticate users and keep them logged in. All the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with Bootstrap.
 
 ## Features 
+
+### Existing Features 
 - User Based Features 
 	- Registration  
-<<<<<<< HEAD
 	- Login
 	- Logout
 - Todo Based Features
 	- Creating Todo Items 
 	- Deleting Todo Items
-=======
-- Todo Based Features
-	- Creating Todo Items 
-	- Deleting Todo Items
-
-### Features Left to Implement 
-- User Based Features 
-	- Login
-	- Logout 
-- Todo Based Features
->>>>>>> gh-pages
 	- Retrieving Todo Items
 	- Updating Todo Items
 
@@ -65,7 +55,7 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 	bower install 
 
 	```
-4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can  install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
+4. After those dependencies have been isntalled you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
 5. Once **http-server** is installed run ```http-server -c-1```
 6. The project will now run on [localhost](http://127.0.0.1:8080)
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
