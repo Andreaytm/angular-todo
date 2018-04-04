@@ -1,3 +1,6 @@
+angular.module("TodoApp").run(['$state', '$stateParams',
+    function($state, $stateParams) {
+
 angular.module("TodoApp", ["ngRoute", "angular-storage", "RouteControllers", "UserService", "TodoService", "TodoDirective"]);
 
 angular.module("TodoApp").config(function($locationProvider, $routeProvider){
@@ -28,4 +31,4 @@ angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 		controller: "EditTodoController"
 	});
 });
-
+}]);
