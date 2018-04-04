@@ -24,13 +24,7 @@ angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 		controller: "TodoController"
 	})
 	.when("/todo/edit/:id", {
-<<<<<<< HEAD
 		templateUrl: "templates/edit-todo.html",
 		controller: "EditTodoController"
-=======
-		templateUrl:"templates/edit-todo.html",
-		controller:"EditTodoController"
->>>>>>> gh-pages
-	
 	});
 });
