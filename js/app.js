@@ -27,7 +27,6 @@ angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 		controller: "EditTodoController"
 	});
 		$locationProvider.html5Mode(true);
-		$locationProvider.hashPrefix('!');
  //Enable href routing without hashes
 
 });
