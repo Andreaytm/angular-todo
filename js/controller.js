@@ -12,7 +12,7 @@ angular.module("RouteControllers", [])
 				$scope.token = results.data.token;
 				store.set("username", $scope.registrationUser.username);
 				store.set("authToken", $scope.token);
-				$location.path("/todo");
+				$location.path("todo");
 			}).catch(function(err) {
 				console.log(err.data);
 			});
@@ -48,7 +48,7 @@ angular.module("RouteControllers", [])
 				$scope.token = results.data.token;
 				store.set("username", $scope.loginUser.username);
 				store.set("authToken", $scope.token);
-				$location.path("/todo");
+				$location.path("todo");
 			}).catch(function(err) {
 				console.log(err);
 			});
@@ -82,7 +82,7 @@ angular.module("RouteControllers", [])
 		};
 
 		if(!store.get("authToken")){
-			$location.path("/");
+			$location.path(".");
 		}
 
 		TodoAPIService.getTodos(url + "todo/", $scope.username, $scope.authToken).then(function(results) {

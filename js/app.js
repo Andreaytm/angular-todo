@@ -2,27 +2,27 @@ angular.module("TodoApp", ["ngRoute", "angular-storage", "RouteControllers", "Us
 
 angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 
-	$routeProvider.when("/", {
+	$routeProvider.when(".", {
 		templateUrl: "templates/home.html",
 		controller: "HomeController"
 	})
-	.when("/accounts/register", {
+	.when("accounts/register", {
 		templateUrl: "templates/register.html",
 		controller: "RegisterController"
 	})
-	.when("/accounts/login", {
+	.when("accounts/login", {
 		templateUrl: "templates/login.html",
 		controller: "LoginController"
 	})
-	.when("/accounts/logout", {
+	.when("accounts/logout", {
 		templateUrl: "templates/logout.html",
 		controller: "LogoutController"
 	})
-	.when("/todo", {
+	.when("todo", {
 		templateUrl: "templates/todo.html",
 		controller: "TodoController"
 	})
-	.when("/todo/edit/:id", {
+	.when("todo/edit/:id", {
 		templateUrl: "templates/edit-todo.html",
 		controller: "EditTodoController"
 	});
