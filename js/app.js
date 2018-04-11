@@ -1,8 +1,9 @@
 angular.module("TodoApp", ["ngRoute", "angular-storage", "RouteControllers", "UserService", "TodoService", "TodoDirective"]);
+TodoApp.constant("baseUrl", "https://andreaytm.github.io/angular-todo/")
 
 angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 
-	$routeProvider.when(".", {
+	$routeProvider.when("/", {
 		templateUrl: "templates/home.html",
 		controller: "HomeController"
 	})
