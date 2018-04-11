@@ -1,5 +1,5 @@
 angular.module("TodoApp", ["ngRoute", "angular-storage", "RouteControllers", "UserService", "TodoService", "TodoDirective"]);
-TodoApp.constant("baseUrl", "https://andreaytm.github.io/");
+TodoApp.constant("baseUrl", "https://andreaytm.github.io");
 
 angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 
