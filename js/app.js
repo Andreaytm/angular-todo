@@ -4,21 +4,15 @@ angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 
 	$routeProvider.when("/", {
 		templateUrl: "templates/home.html",
-		controller: "HomeController"
-		.otherwise({
-         redirectTo: '/'	    	    
+		controller: "HomeController"   	    
 	})
 	.when("/accounts/register", {
 		templateUrl: "templates/register.html",
 		controller: "RegisterController"
-		.otherwise({
-         redirectTo: '/'
 	})
 	.when("/accounts/login", {
 		templateUrl: "templates/login.html",
 		controller: "LoginController"
-		.otherwise({
-         redirectTo: '/'
 	})
 	.when("/accounts/logout", {
 		templateUrl: "templates/logout.html",
@@ -31,7 +25,9 @@ angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 	.when("/todo/edit/:id", {
 		templateUrl: "templates/edit-todo.html",
 		controller: "EditTodoController"
-	});
+	})
+		.otherwise({
+         redirectTo: '/'	 });
 		$locationProvider.html5Mode(true);
  //Enable href routing without hashes
    
