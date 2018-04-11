@@ -1,5 +1,4 @@
 angular.module("TodoApp", ["ngRoute", "angular-storage", "RouteControllers", "UserService", "TodoService", "TodoDirective"]);
-TodoApp.constant("baseUrl", "https://andreaytm.github.io");
 
 angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 
@@ -29,5 +28,7 @@ angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 	});
 		$locationProvider.html5Mode(true);
  //Enable href routing without hashes
-
+    .run(function($location) {
+      console.log('OK', $location.absUrl());
+    });
 });
