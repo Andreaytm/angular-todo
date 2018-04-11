@@ -26,8 +26,6 @@ angular.module("TodoApp").config(function($locationProvider, $routeProvider){
 		templateUrl: "templates/edit-todo.html",
 		controller: "EditTodoController"
 	})
-		.otherwise({
-         redirectTo: '/'	 });
 		$locationProvider.html5Mode(true);
  //Enable href routing without hashes
    
